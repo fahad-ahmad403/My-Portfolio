@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Porfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,41 +15,47 @@
     <section class="profile_container">
         <div class="profile">
             <div class="profile_bg"></div>
-            <img src="img/profile_img.png" alt="profile image">
+            <img src="img/profile_img.png" alt="profile image" />
         </div>
         <div class="profile_info">
             <p class="text1">Hi, I am</p>
-            <h1>Fahad Ahmad</h1>
+            <h1><span id="autotype"></span></h1>
             <p class="text2">Frontend Developer</p>
-            <button>Let's Work Together</button>
+            <button class="cta_btn">
+                <a href="#contact-section">Let's Work Together</a>
+            </button>
         </div>
     </section>
     <section class="about_section">
         <h2 class="about_heading">About Me</h2>
-        <p class="about_text">"I embarked on my web development journey in December 2023, proficient <span>HTML, CSS,
-                and JavaScript</span> while building a strong foundation in creating <span>responsive websites</span>.
-            I am eager to bring my skills to real-world projects, collaborate with forward-thinking teams, and expand
-            my development expertise."</p>
+        <p class="about_text">
+            "I embarked on my web development journey in December 2023, proficient
+            <span class="diff_text">HTML, CSS, and JavaScript</span> while building
+            a strong foundation in creating
+            <span class="diff_text">responsive websites</span>. I am eager to bring
+            my skills to real-world projects, collaborate with forward-thinking
+            teams, and expand my development expertise."
+        </p>
     </section>
     <section class="skill_section">
         <h2 class="skill_heading">Skills Ability</h2>
         <div class="skills">
             <div class="skill_1">
-                <img src="img/html logo.png" alt="html logo">
+                <img src="img/html logo.png" alt="html logo" />
                 <div class="circle_1">
-                    <div class="percentage_1">90%</div>
+                    <div class="percentage">90%</div>
                 </div>
             </div>
             <div class="skill_1">
-                <img src="img/css logo.png" alt="html logo">
+                <img src="img/css logo.png" alt="html logo" />
                 <div class="circle_2">
-                    <div class="percentage_1">80%</div>
+                    <div class="percentage">80%</div>
                 </div>
             </div>
             <div class="skill_1">
-                <img src="img/javascript logo.png" alt="html logo">
+                <img src="img/javascript logo.png" alt="html logo" />
                 <div class="circle_3">
-                    <div class="percentage_1">60%</div>
+                    <div class="percentage">60%</div>
                 </div>
             </div>
         </div>
@@ -62,11 +68,12 @@
                     <h3 class="project1_heading">TechGear</h3>
                     <p class="project1_subheading">E-Commerce Store</p>
                 </div>
-                <button class="project_link"><a href="https://fahad-ahmad403.github.io/TechGear/">Visit
-                        Site</a></button>
+                <button class="project_link">
+                    <a href="https://fahad-ahmad403.github.io/TechGear/">Visit Site</a>
+                </button>
             </div>
             <div class="content_box1">
-                <video id="video1" loop muted src="img/project1_video.mp4"></video>
+                <video id="video1" controls loop muted src="img/project1_video.mp4"></video>
             </div>
         </div>
         <div class="project2">
@@ -75,10 +82,12 @@
                     <h3 class="project2_heading">Domain</h3>
                     <p class="project2_subheading">It's time to show the world</p>
                 </div>
-                <button class="project_link"><a href="https://fahad-ahmad403.github.io/Domain/">Visit Site</a></button>
+                <button class="project_link">
+                    <a href="https://fahad-ahmad403.github.io/Domain/">Visit Site</a>
+                </button>
             </div>
             <div class="content_box2">
-                <video id="video2" loop muted src="img/project2_video.mp4"></video>
+                <video id="video2" controls loop muted src="img/project2_video.mp4"></video>
             </div>
         </div>
     </section>
@@ -86,14 +95,17 @@
         <h2 class="t_heading">Testimonials</h2>
         <p class="t_text">Testimonials will be added soon.</p>
     </section>
-    <section class="contact_section">
+    <section id="contact-section" class="contact_section">
         <h2 class="contact_heading">Contact</h2>
         <div class="contact_container">
             <div class="contact_info">
                 <div class="info_box1">
                     <h3 class="box1_heading">DON'T BE SHY !</h3>
-                    <p class="box1_text">Feel free to get in touch with me. I am always open to discussing the new
-                        projects, creative ideas and opportunities to be the part of your vision.</p>
+                    <p class="box1_text">
+                        Feel free to get in touch with me. I am always open to discussing
+                        the new projects, creative ideas and opportunities to be the part
+                        of your vision.
+                    </p>
                 </div>
                 <div class="info_box2">
                     <i class="fa-solid fa-envelope"></i>
@@ -117,19 +129,21 @@
             </div>
             <div class="contact_form">
                 <form>
-                    <input type="text" placeholder="Enter your Name" id="name" required>
-                    <br>
-                    <input type="email" placeholder="Enter your Email" id="email" required>
-                    <br>
-                    <input type="text" placeholder="Enter your Number" id="number" required>
-                    <br>
-                    <textarea placeholder="Enter a message" id="message" rows="10" cols="50" required></textarea>
+                    <input type="text" placeholder="Enter your Name" id="name" required autocomplete="name" />
+                    <br />
+                    <input type="email" placeholder="Enter your Email" id="email" required autocomplete="email" />
+                    <br />
+                    <input type="text" placeholder="Enter your Number" id="number" required />
+                    <br />
+                    <textarea placeholder="Enter a message" id="message" required></textarea>
                 </form>
-                <button onclick="sendmail(); return false;" class="form_btn">Send Message<i id="send_icon"
-                        class="fa-solid fa-paper-plane"></i></button>
+                <button onclick="sendmail()" id="btn_f">
+                    Send Message<i id="send_icon" class="fa-solid fa-paper-plane"></i>
+                </button>
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
