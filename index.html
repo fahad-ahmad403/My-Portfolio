@@ -4,26 +4,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A fully responsive portfolio website">
+    <meta name="keywords" content="portfolio, web design, responsive website">
+    <meta name="author" content="Fahad Ahmad">
     <title>My Porfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/profile_img.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
     <section class="profile_container">
         <div class="profile">
             <div class="profile_bg"></div>
-            <img src="img/profile_img.png" alt="profile image" />
+            <img src="img/profile_img.png" alt="profile image" loading="lazy">
         </div>
         <div class="profile_info">
             <p class="text1">Hi, I am</p>
-            <h1><span id="autotype"></span></h1>
+            <h1>F<span id="autotype"></span></h1>
             <p class="text2">Frontend Developer</p>
-            <button class="cta_btn">
-                <a href="#contact-section">Let's Work Together</a>
-            </button>
+            <a class="cta_btn" href="/#contact-section">Let's Work Together</a>
         </div>
     </section>
     <section class="about_section">
@@ -41,19 +44,19 @@
         <h2 class="skill_heading">Skills Ability</h2>
         <div class="skills">
             <div class="skill_1">
-                <img src="img/html logo.png" alt="html logo" />
+                <img src="img/html_logo.png" alt="html logo" loading="lazy">
                 <div class="circle_1">
                     <div class="percentage">90%</div>
                 </div>
             </div>
             <div class="skill_1">
-                <img src="img/css logo.png" alt="html logo" />
+                <img src="img/css_logo.png" alt="css logo" loading="lazy">
                 <div class="circle_2">
                     <div class="percentage">80%</div>
                 </div>
             </div>
             <div class="skill_1">
-                <img src="img/javascript logo.png" alt="html logo" />
+                <img src="img/javascript_logo.png" alt="javascript logo" loading="lazy">
                 <div class="circle_3">
                     <div class="percentage">60%</div>
                 </div>
@@ -68,9 +71,7 @@
                     <h3 class="project1_heading">TechGear</h3>
                     <p class="project1_subheading">E-Commerce Store</p>
                 </div>
-                <button class="project_link">
-                    <a href="https://fahad-ahmad403.github.io/TechGear/">Visit Site</a>
-                </button>
+                    <a class="project_link" href="https://fahad-ahmad403.github.io/TechGear/">Visit Site</a>
             </div>
             <div class="content_box1">
                 <video id="video1" controls loop muted src="img/project1_video.mp4"></video>
@@ -82,9 +83,7 @@
                     <h3 class="project2_heading">Domain</h3>
                     <p class="project2_subheading">It's time to show the world</p>
                 </div>
-                <button class="project_link">
-                    <a href="https://fahad-ahmad403.github.io/Domain/">Visit Site</a>
-                </button>
+                    <a class="project_link" href="https://fahad-ahmad403.github.io/Domain/">Visit Site</a>
             </div>
             <div class="content_box2">
                 <video id="video2" controls loop muted src="img/project2_video.mp4"></video>
@@ -130,11 +129,11 @@
             <div class="contact_form">
                 <form>
                     <input type="text" placeholder="Enter your Name" id="name" required autocomplete="name" />
-                    <br />
+                    <br>
                     <input type="email" placeholder="Enter your Email" id="email" required autocomplete="email" />
-                    <br />
+                    <br>
                     <input type="text" placeholder="Enter your Number" id="number" required />
-                    <br />
+                    <br>
                     <textarea placeholder="Enter a message" id="message" required></textarea>
                 </form>
                 <button onclick="sendmail()" id="btn_f">
@@ -146,6 +145,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJPSZ0NBZ5"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init({
@@ -153,6 +153,19 @@
             });
         })();
     </script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "My Portfolio",
+          "url": "https://fahad-ahmad403.github.io/My-Portfolio/",
+          "logo": "/img/profile_img.png",   <!-- Use logo url is best in this case  -->
+          "sameAs": [
+            "https://fahad-ahmad403.github.io/TechGear/",
+            "https://fahad-ahmad403.github.io/Domain/"
+          ]
+        }
+        </script>
     <script src="script.js"></script>
 </body>
 

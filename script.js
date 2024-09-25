@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // For autotyping animation
 
 var typed = new Typed("#autotype", {
-    strings: ["Fahad Ahmad"],
+    strings: ["ahad Ahmad"],
     typeSpeed: 150,
     loop: false,
 });
