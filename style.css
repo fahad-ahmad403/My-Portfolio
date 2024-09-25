@@ -71,7 +71,7 @@ h1 {
 .cta_btn {
     text-decoration: none;
     color: var(--yellow);
-    font-size: 1.1em;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,6 +259,10 @@ video {
     border-radius: 15px;
     color: var(--yellow);
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
 }
 
 .testimonials_section {
@@ -412,13 +416,13 @@ form {
 
 @media (hover: none) {
 
-    .cta_btn a {
+    .cta_btn {
       color: var(--yellow) !important;
       pointer-events: auto;
     }
 
-    .cta_btn a:hover {
-        font-weight: 400;
+    .cta_btn:hover {
+        font-weight: 600;
     }
 
     .cta_btn::before {
@@ -495,13 +499,11 @@ form {
         font-size: 2em;
     }
 
-    .cta_btn a {
-        font-size: 0.9em;
-    }
-
     .cta_btn {
         width: 130px;
         height: 40px;
+        font-size: 0.7em;
+        font-weight: 600;
     }
 
     .projects_section {
