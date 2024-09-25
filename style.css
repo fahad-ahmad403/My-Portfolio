@@ -71,7 +71,6 @@ h1 {
 .cta_btn {
     text-decoration: none;
     color: var(--yellow);
-    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
