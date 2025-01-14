@@ -71,10 +71,10 @@ h1 {
 .cta_btn {
     text-decoration: none;
     color: var(--yellow);
+    background-color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--black);
     width: 200px;
     height: 50px;
     border-radius: 5px;
@@ -171,7 +171,8 @@ h1 {
 
 .circle_1,
 .circle_2,
-.circle_3 {
+.circle_3,
+.circle_4 {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -187,6 +188,10 @@ h1 {
 
 .circle_3 {
     background: conic-gradient(var(--yellow) 0% 60%, grey 60% 100%);
+}
+
+.circle_4 {
+    background: conic-gradient(rgb(34, 98, 175) 0% 70%, grey 70% 100%);
 }
 
 .percentage {
@@ -252,12 +257,12 @@ video {
 }
 
 .project_link {
+    color: var(--yellow);
+    text-decoration: none;
     width: 90px;
     height: 30px;
     border: 1px solid var(--yellow);
     border-radius: 15px;
-    color: var(--yellow);
-    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -441,6 +446,10 @@ form {
     #message {
         margin-bottom: -6px;
     }
+
+    .skill_1 img {
+        padding-right: 0.5em;
+    }
 }
 
 @media screen and (max-width: 890px) {
@@ -472,6 +481,10 @@ form {
         right: 4em;
         top: 2.2em;
         width: 220px;
+    }
+
+    .skill_1 img {
+        padding-right: 1em;
     }
 
     .profile_info {
@@ -544,12 +557,16 @@ form {
     }
 
     .skill_section {
-        height: 220px;
+        height: 250px;
     }
 
     .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 40px;
         padding-top: 2em;
-    }
+      }
 
     .projects_section {
         height: 700px;
@@ -633,7 +650,7 @@ form {
 
     .skills {
         width: 80%;
-        gap: 20px;
+        gap: 40px;
         margin: 0 auto;
     }
 
@@ -685,12 +702,14 @@ form {
     }
 
     .skill_section {
-        height: 220px;
+        height: 270px;
     }
 
     .skills {
         padding-top: 2em;
         width: 100%;
+        column-gap: 10px;
+        row-gap: 40px;
     }
 
     .projects_section {

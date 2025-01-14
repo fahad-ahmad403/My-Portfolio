@@ -2,25 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A fully responsive portfolio website">
-    <meta name="keywords" content="portfolio, web design, responsive website">
-    <meta name="author" content="Fahad Ahmad">
-    <title>My Porfolio</title>
-    <link rel="shortcut icon" href="img/profile_img.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="A fully responsive portfolio website" />
+    <meta name="keywords" content="portfolio, web design, responsive website" />
+    <meta name="author" content="Fahad Ahmad" />
+    <title>Fahad Ahmad-Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <section class="profile_container">
         <div class="profile">
             <div class="profile_bg"></div>
-            <img src="img/profile_img.png" alt="profile image" loading="lazy">
+            <img src="img/profile_img.png" alt="profile image" loading="lazy" />
         </div>
         <div class="profile_info">
             <p class="text1">Hi, I am</p>
@@ -33,7 +37,7 @@
         <h2 class="about_heading">About Me</h2>
         <p class="about_text">
             "I embarked on my web development journey in December 2023, proficient
-            <span class="diff_text">HTML, CSS, and JavaScript</span> while building
+            <span class="diff_text">HTML, CSS, JavaScript, and React</span> while building
             a strong foundation in creating
             <span class="diff_text">responsive websites</span>. I am eager to bring
             my skills to real-world projects, collaborate with forward-thinking
@@ -44,21 +48,27 @@
         <h2 class="skill_heading">Skills Ability</h2>
         <div class="skills">
             <div class="skill_1">
-                <img src="img/html_logo.png" alt="html logo" loading="lazy">
+                <img src="img/html_logo.png" alt="html logo" loading="lazy" />
                 <div class="circle_1">
                     <div class="percentage">90%</div>
                 </div>
             </div>
             <div class="skill_1">
-                <img src="img/css_logo.png" alt="css logo" loading="lazy">
+                <img src="img/css_logo.png" alt="css logo" loading="lazy" />
                 <div class="circle_2">
                     <div class="percentage">80%</div>
                 </div>
             </div>
             <div class="skill_1">
-                <img src="img/javascript_logo.png" alt="javascript logo" loading="lazy">
+                <img src="img/javascript_logo.png" alt="javascript logo" loading="lazy" />
                 <div class="circle_3">
                     <div class="percentage">60%</div>
+                </div>
+            </div>
+            <div class="skill_1">
+                <img src="img/react_logo.png" alt="react logo" loading="lazy" />
+                <div class="circle_4">
+                    <div class="percentage">70%</div>
                 </div>
             </div>
         </div>
@@ -71,7 +81,7 @@
                     <h3 class="project1_heading">TechGear</h3>
                     <p class="project1_subheading">E-Commerce Store</p>
                 </div>
-                <a class="project_link" href="https://fahad-ahmad403.github.io/TechGear/">Visit Site</a>
+                <a class="project_link" target="_blank" href="https://fahad-ahmad403.github.io/TechGear/">Visit Site</a>
             </div>
             <div class="content_box1">
                 <video id="video1" controls loop muted src="img/project1_video.mp4"></video>
@@ -80,10 +90,10 @@
         <div class="project2">
             <div class="project_details">
                 <div class="p_text">
-                    <h3 class="project2_heading">Domain</h3>
-                    <p class="project2_subheading">It's time to show the world</p>
+                    <h3 class="project2_heading">Trendy Collection</h3>
+                    <p class="project2_subheading">Clothing Store (React js Project)</p>
                 </div>
-                <a class="project_link" href="https://fahad-ahmad403.github.io/Domain/">Visit Site</a>
+                <a class="project_link" target="_blank" href="https://fahad-ahmad403.github.io/Trendy-Collection--Clothing-Store/">Visit Site</a>
             </div>
             <div class="content_box2">
                 <video id="video2" controls loop muted src="img/project2_video.mp4"></video>
@@ -128,12 +138,12 @@
             </div>
             <div class="contact_form">
                 <form>
-                    <input type="text" placeholder="Enter your Name" id="name" required autocomplete="name">
-                    <br>
-                    <input type="email" placeholder="Enter your Email" id="email" required autocomplete="email">
-                    <br>
-                    <input type="text" placeholder="Enter your Number" id="number" required>
-                    <br>
+                    <input type="text" placeholder="Enter your Name" id="name" required autocomplete="name" />
+                    <br />
+                    <input type="email" placeholder="Enter your Email" id="email" required autocomplete="email" />
+                    <br />
+                    <input type="text" placeholder="Enter your Number" id="number" required />
+                    <br />
                     <textarea placeholder="Enter a message" id="message" required></textarea>
                 </form>
                 <button onclick="sendmail()" id="btn_f">
@@ -154,18 +164,18 @@
         })();
     </script>
     <script type="application/ld+json">
-        {
-          "@context": "http://schema.org",
-          "@type": "Organization",
-          "name": "My Portfolio",
-          "url": "https://fahad-ahmad403.github.io/My-Portfolio/",
-          "logo": "https://fahad-ahmad403.github.io/My-Portfolio/img/profile_img.png",
-          "sameAs": [
-            "https://fahad-ahmad403.github.io/TechGear/",
-            "https://fahad-ahmad403.github.io/Domain/"
-          ]
-        }
-        </script>
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "My Portfolio",
+        "url": "https://fahad-ahmad403.github.io/My-Portfolio/",
+        "logo": "https://fahad-ahmad403.github.io/My-Portfolio/img/profile_img.png",
+        "sameAs": [
+          "https://fahad-ahmad403.github.io/TechGear/",
+          "https://fahad-ahmad403.github.io/Domain/"
+        ]
+      }
+    </script>
     <script src="script.js"></script>
 </body>
 
