@@ -2,8 +2,10 @@
 
 const content_box1 = document.querySelector(".content_box1");
 const content_box2 = document.querySelector(".content_box2");
+const content_box3 = document.querySelector(".content_box3");
 const video1 = document.querySelector("#video1");
 const video2 = document.querySelector("#video2");
+const video3 = document.querySelector("#video3");
 
 content_box1.addEventListener("mouseenter", function () {
     video1.play();
@@ -23,6 +25,15 @@ content_box2.addEventListener("mouseleave", function () {
     video2.currentTime = 0;
 });
 
+content_box3.addEventListener("mouseenter", function () {
+    video3.play();
+});
+
+content_box3.addEventListener("mouseleave", function () {
+    video3.pause();
+    video3.currentTime = 0;
+});
+
 // For video controls
 
 function isMobileDevice() {
@@ -32,9 +43,11 @@ function isMobileDevice() {
 if (isMobileDevice()) {
     video1.setAttribute('controls', true);
     video2.setAttribute('controls', true);
+    video3.setAttribute('controls', true);
 } else {
     video1.removeAttribute('controls');
     video2.removeAttribute('controls');
+    video3.removeAttribute('controls');
 }
 
 // For form submitting
@@ -73,6 +86,8 @@ function sendmail() {
         .catch(function (error) {
             alert("Failed to send the reply message. Sorry!");
         });
+
+    this.reset();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -107,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 var typed = new Typed("#autotype", {
     strings: ["ahad Ahmad"],
-    typeSpeed: 150,
+    typeSpeed: 180,
     loop: false,
 });
 

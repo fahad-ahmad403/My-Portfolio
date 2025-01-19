@@ -208,7 +208,8 @@ h1 {
 
 .projects_section {
     width: 60%;
-    height: 1000px;
+    height: auto;
+    padding: 3em 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,7 +222,8 @@ h1 {
 }
 
 .project1,
-.project2 {
+.project2,
+.project3 {
     display: flex;
     width: 80%;
     margin: 0 auto;
@@ -230,18 +232,21 @@ h1 {
 }
 
 .project1_heading,
-.project2_heading {
+.project2_heading,
+.project3_heading {
     color: var(--yellow);
 }
 
 .project1_subheading,
-.project2_subheading {
+.project2_subheading,
+.project3_subheading {
     color: var(--white);
     font-size: 0.8em;
 }
 
 .content_box1,
-.content_box2 {
+.content_box2,
+.content_box3 {
     width: 100%;
 }
 
@@ -436,10 +441,6 @@ form {
 
 @media screen and (max-width: 1140px) {
 
-    .projects_section {
-        height: 800px;
-    }
-
     #email,
     #number,
     #name,
@@ -493,10 +494,6 @@ form {
         padding-top: 4em;
     }
 
-    .projects_section {
-        height: 1050px;
-    }
-
     #email,
     #number,
     #name,
@@ -516,10 +513,6 @@ form {
         height: 40px;
         font-size: 0.7em;
         font-weight: 600;
-    }
-
-    .projects_section {
-        height: 850px;
     }
     
     #email,
@@ -567,10 +560,6 @@ form {
         gap: 40px;
         padding-top: 2em;
       }
-
-    .projects_section {
-        height: 700px;
-    }
 
     .t_text {
         font-size: 1.1em;
@@ -653,10 +642,6 @@ form {
         gap: 40px;
         margin: 0 auto;
     }
-
-    .projects_section {
-        height: 700px;
-    }
 }
 
 @media screen and (max-width: 360px) {
@@ -710,10 +695,6 @@ form {
         width: 100%;
         column-gap: 10px;
         row-gap: 40px;
-    }
-
-    .projects_section {
-        height: 600px;
     }
 
     .t_text {
